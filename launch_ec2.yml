@@ -1,0 +1,14 @@
+---
+ - name: Launch an EC2 Instance
+   hosts: all
+   tasks:
+    - name: Launch
+      ec2:
+       region: ap-south-1
+       image: ami-0ad42f4f66f6c1cc9
+       instance_type: t2.micro
+       count: 2
+       group_id: sg-11974d7c
+       key_name: ansible
+       aws_access_key: AKIAIB4A7B7G7ARJBS5A
+       aws_secret_key: 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

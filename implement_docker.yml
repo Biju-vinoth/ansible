@@ -1,0 +1,19 @@
+---
+ - name: Install and Start Docker Engine
+   hosts: all
+   tasks:
+    - name: Install
+      yum:
+        name: docker
+        state: present
+        update_cache: yes
+
+    - name: start and enable service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Run Jenkins in Container
+      shell:
+        cmd: docker run -d jenkins
