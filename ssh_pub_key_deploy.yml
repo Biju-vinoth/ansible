@@ -11,4 +11,4 @@
         state: present
         key: '{{ item }}'
       with_file:
-        - ~/.ssh/lab_rsa.pub
+        - ~/.ssh/id_rsa.pub
