@@ -1,14 +1,14 @@
 ---
- - name: Install and Start Docker Engine
+ - name: Install and start docker engine
    hosts: all
    tasks:
-    - name: Install
+    - name: Install docker
       yum:
         name: docker
         state: present
         update_cache: yes
 
-    - name: start and enable service
+    - name: Start and enable docker service
       service:
         name: docker
         state: started
