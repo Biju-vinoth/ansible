@@ -1,8 +1,8 @@
 ---
  - name: Launch an EC2 Instance
-   hosts: all
+   hosts: localhost
    tasks:
-    - name: Launch
+    - name: Launch Instance
       ec2:
        region: ap-south-1
        image: ami-0ad42f4f66f6c1cc9
