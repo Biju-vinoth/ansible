@@ -10,5 +10,5 @@
        count: 2
        group_id: sg-11974d7c
        key_name: ansible
-       aws_access_key: AKIAIB4A7B7G7ARJBS5A
-       aws_secret_key: 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
+       aws_access_key: xyz
+       aws_secret_key: xyz
