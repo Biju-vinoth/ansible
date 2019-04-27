@@ -1,19 +1,19 @@
 ---
- - name: Implement Web Server
+ - name: Implement apache web server
    hosts: all
    tasks:
-    - name: Install or Remove Software
+    - name: Install or Remove software
       yum:
         name: httpd
         state: present
 
-    - name: Start and Enable Service
+    - name: Start and enable service
       service:
         name: httpd
         state: started
         enabled: yes
 
-    - name: Place a Web Content
+    - name: Place a web content
       copy:
         content: '"{{ ansible_hostname }}" is managed by jerrish'
         dest: /var/www/html/index.html
