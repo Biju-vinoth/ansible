@@ -1,8 +1,8 @@
 ---
- - name: Launch an EC2 Instance
+ - name: Launch an aws ec2 instance using ansible
    hosts: localhost
    tasks:
-    - name: Launch Instance
+    - name: Launch instance
       ec2:
        region: ap-south-1
        image: ami-0ad42f4f66f6c1cc9
