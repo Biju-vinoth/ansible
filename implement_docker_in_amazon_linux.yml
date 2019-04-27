@@ -14,6 +14,6 @@
         state: started
         enabled: yes
 
-    - name: Run Jenkins in Container
+    - name: Run apache as Container
       shell:
-        cmd: docker run -d jenkins
+        cmd: docker run -d httpd
