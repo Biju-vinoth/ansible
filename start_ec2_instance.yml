@@ -8,3 +8,4 @@
         instance_ids: i-0b44d5c378e7f9949
         state: running
         wait: yes
+#aws access key and secret key should be configured
