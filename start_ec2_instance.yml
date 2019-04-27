@@ -1,0 +1,10 @@
+---
+ - name: Start Ec2 instance
+   hosts: aws
+   tasks:
+    - name: start instance
+      ec2:
+        region: ap-south-1
+        instance_ids: i-0b44d5c378e7f9949
+        state: running
+        wait: yes
