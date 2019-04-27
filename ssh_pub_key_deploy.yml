@@ -1,5 +1,5 @@
 ---
- - name: Public key is deployed to managed hosts for Ansible
+ - name: Public key is deployed to managed hosts for ansible management
    hosts: all
    vars:
     user: root
