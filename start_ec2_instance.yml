@@ -1,5 +1,5 @@
 ---
- - name: Start Ec2 instance
+ - name: Start ec2 instance
    hosts: aws
    tasks:
     - name: start instance
@@ -8,4 +8,4 @@
         instance_ids: i-0b44d5c378e7f9949
         state: running
         wait: yes
-#aws access key and secret key should be configured
+#aws access key and secret key should be already configured
