@@ -1,0 +1,11 @@
+---
+ - name: Stop Ec2 instance
+   hosts: aws
+   tasks:
+    - name: stop instance
+      ec2:
+        region: ap-south-1
+        instance_ids: i-0b44d5c378e7f9949
+        state: stopped
+        wait: yes
+#aws access key and secret key is configured
