@@ -1,5 +1,5 @@
 ---
- - name: Stop Ec2 instance
+ - name: Stop ec2 instance
    hosts: aws
    tasks:
     - name: stop instance
@@ -8,4 +8,4 @@
         instance_ids: i-0b44d5c378e7f9949
         state: stopped
         wait: yes
-#aws access key and secret key is configured
+#aws access key and secret key should be already configured
