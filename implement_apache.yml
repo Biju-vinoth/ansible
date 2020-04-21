@@ -1,6 +1,6 @@
 ---
  - name: Implement apache web server
-   hosts: all
+   hosts: 10.87.3.33
    tasks:
     - name: Install or Remove software
       yum:
