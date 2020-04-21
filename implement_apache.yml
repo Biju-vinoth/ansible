@@ -15,5 +15,5 @@
 
     - name: Place a web content
       copy:
-        content: '"{{ ansible_hostname }}" is managed by jerrish'
+        content: '"{{ ansible_hostname }}" is managed by vinoth'
         dest: /var/www/html/index.html
